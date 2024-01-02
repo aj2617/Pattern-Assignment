@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+ int n;
+ printf(" Enter line number :");
+ scanf("%d",&n);
+int l,s,c;
+ for( l=n; l>=1; l--){
+                      for( c=1;c<=2*n-1;c++)
+                       {
+                             if(c+l==n+1 || c-l==n-1 || n==l)
+                                          printf("*");
+                              else
+                                      printf(" ");
+                      }
+                             printf("\n");
+                      }
+ return 0;
+}
